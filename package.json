@@ -10,6 +10,7 @@
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "release": "yarn build && standard-version -a && git push origin --follow-tags",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -19,9 +20,11 @@
     "gatsby": "^4.4.0",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
+    "gatsby-plugin-no-sourcemaps": "^4.6.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "standard-version": "^9.3.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
