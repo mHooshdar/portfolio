@@ -1,32 +1,24 @@
 {
+  "name": "portfolio",
   "private": true,
-  "name": "@mhooshdar/portfolio",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
-  "version": "0.0.2",
-  "author": "Mohammad Hooshdar",
-  "starter-name": "mhooshdar-portfolio",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "release": "yarn build && standard-version -a && git push origin --follow-tags",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^3.0.0",
-    "gatsby": "^4.4.0",
-    "gatsby-plugin-gatsby-cloud": "^4.0.0",
-    "gatsby-plugin-manifest": "^4.0.0",
-    "gatsby-plugin-no-sourcemaps": "^4.6.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "standard-version": "^9.3.2"
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "postcss": "^8.4.6",
+    "standard-version": "^9.3.2",
+    "tailwindcss": "^3.0.18"
   }
 }
